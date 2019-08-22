@@ -13,7 +13,7 @@ class MathFactsViewController: UIViewController, UITextFieldDelegate {
     
     weak var delegate: FactsCoordinatorDelegate!
     
-    var viewModel = FactsViewModel(apiClient: KnowSomeFactsRapidAPI())
+    var viewModel: FactsViewModel!
     
     private let mathLabel : UILabel = {
         let mathLabel = UILabel()
@@ -63,6 +63,15 @@ class MathFactsViewController: UIViewController, UITextFieldDelegate {
         submitBtn.translatesAutoresizingMaskIntoConstraints = false
         return submitBtn
     }()
+    
+    init(viewModel: FactsViewModel){
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

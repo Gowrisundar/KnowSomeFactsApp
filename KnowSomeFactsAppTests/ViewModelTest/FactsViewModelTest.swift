@@ -20,6 +20,7 @@ class FactsViewModelTest: XCTestCase {
     override func setUp() {
         mockAPIClient = MockKnowSomeFactsAPIClient()
         factsViewModel = FactsViewModel(apiClient: mockAPIClient)
+        mockAPIClient.factModel = FactsModel(text: "", number: 0, found: true, type: "", date: "0", year: 0)
     }
     
     

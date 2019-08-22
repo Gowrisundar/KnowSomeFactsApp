@@ -10,7 +10,6 @@
 		612A25F0230D14C3003DC276 /* FactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A25EF230D14C3003DC276 /* FactsTableViewCell.swift */; };
 		612A25F2230D16AD003DC276 /* CellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A25F1230D16AD003DC276 /* CellDataModel.swift */; };
 		612A25F4230D5870003DC276 /* MockFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A25F3230D5870003DC276 /* MockFactsViewModel.swift */; };
-		612A25F8230D7318003DC276 /* MockUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A25F7230D7318003DC276 /* MockUIButton.swift */; };
 		614C02BB230BC6A600BE0126 /* FactsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C02BA230BC6A600BE0126 /* FactsViewModelTest.swift */; };
 		614C02BD230BD11A00BE0126 /* MockKnowSomeFactsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C02BC230BD11A00BE0126 /* MockKnowSomeFactsAPIClient.swift */; };
 		614C02C2230BD37900BE0126 /* KnowSomeFactsRapidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C02C1230BD37900BE0126 /* KnowSomeFactsRapidAPI.swift */; };
@@ -84,7 +83,6 @@
 		612A25EF230D14C3003DC276 /* FactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsTableViewCell.swift; sourceTree = "<group>"; };
 		612A25F1230D16AD003DC276 /* CellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDataModel.swift; sourceTree = "<group>"; };
 		612A25F3230D5870003DC276 /* MockFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFactsViewModel.swift; sourceTree = "<group>"; };
-		612A25F7230D7318003DC276 /* MockUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIButton.swift; sourceTree = "<group>"; };
 		614C02BA230BC6A600BE0126 /* FactsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModelTest.swift; sourceTree = "<group>"; };
 		614C02BC230BD11A00BE0126 /* MockKnowSomeFactsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKnowSomeFactsAPIClient.swift; sourceTree = "<group>"; };
 		614C02C1230BD37900BE0126 /* KnowSomeFactsRapidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowSomeFactsRapidAPI.swift; sourceTree = "<group>"; };
@@ -287,7 +285,6 @@
 				616B775D230AF6D500255178 /* MockFactsCoordinator.swift */,
 				614C02BC230BD11A00BE0126 /* MockKnowSomeFactsAPIClient.swift */,
 				612A25F3230D5870003DC276 /* MockFactsViewModel.swift */,
-				612A25F7230D7318003DC276 /* MockUIButton.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -511,7 +508,6 @@
 				616B775E230AF6D500255178 /* MockFactsCoordinator.swift in Sources */,
 				619F419D230AA4B300D46594 /* MockNavigationController.swift in Sources */,
 				612A25F4230D5870003DC276 /* MockFactsViewModel.swift in Sources */,
-				612A25F8230D7318003DC276 /* MockUIButton.swift in Sources */,
 				616B7758230AE7A100255178 /* YearFactsCoordinatorTest.swift in Sources */,
 				616B775C230AF00C00255178 /* MockKnowSomeFactsCoordinator.swift in Sources */,
 			);

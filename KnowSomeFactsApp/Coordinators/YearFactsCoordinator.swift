@@ -23,7 +23,7 @@ class YearFactsCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         
-        self.yearFactsViewController = YearFactsViewController()
+        self.yearFactsViewController = YearFactsViewController(viewModel: FactsViewModel())
         self.navigationController = navigationController
         
     }

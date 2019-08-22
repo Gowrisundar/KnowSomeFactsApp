@@ -16,6 +16,10 @@ class FactsViewModel {
         self.apiClient = apiClient
     }
     
+    convenience init(){
+        self.init(apiClient: KnowSomeFactsRapidAPI())
+    }
+    
     func getDateFacts(date: String, month: String, completionHandler: @escaping (FactsModel?, Error?) -> Void){
         apiClient.getDateFacts(date: date, month: month, completionHandler: completionHandler)
     }

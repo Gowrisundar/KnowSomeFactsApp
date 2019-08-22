@@ -23,7 +23,7 @@ class MathFactsCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         
-        self.mathFactsViewController = MathFactsViewController()
+        self.mathFactsViewController = MathFactsViewController(viewModel: FactsViewModel())
         self.navigationController = navigationController
         
     }

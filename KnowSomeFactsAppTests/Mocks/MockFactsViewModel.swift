@@ -12,16 +12,29 @@ import Foundation
 
 class MockFactsViewModel : FactsViewModel {
     
+    var getDateFactsMethodCalled = false
+    
+    var getYearFactsMethodCalled = false
+    
+    var getMathFactsMethodCalled = false
+    
+    var viewModelCompletionHandler: ((FactsModel?, Error?) -> Void)!
     
     override func getDateFacts(date: String, month: String, completionHandler: @escaping (FactsModel?, Error?) -> Void) {
-        
-        let factsModel = FactsModel(text: "Sundar", number: 0, found: true, type: "text", date: "8", year: 8)
 
-        completionHandler(factsModel,nil)
+        getDateFactsMethodCalled = true
+        viewModelCompletionHandler = completionHandler
         
     }
     
+    override func getYearFacts(year: String, completionHandler: @escaping (FactsModel?, Error?) -> Void) {
+        getYearFactsMethodCalled = true
+        viewModelCompletionHandler = completionHandler
+    }
     
-    
+    override func getMathFacts(math: String, completionHandler: @escaping (FactsModel?, Error?) -> Void) {
+        getMathFactsMethodCalled = true
+        viewModelCompletionHandler = completionHandler
+    }
     
 }

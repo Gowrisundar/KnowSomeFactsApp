@@ -23,7 +23,7 @@ class DateFactsCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         
-        self.dateFactsViewController = DateFactsViewController(viewModel: FactsViewModel(apiClient: KnowSomeFactsRapidAPI()))
+        self.dateFactsViewController = DateFactsViewController(viewModel: FactsViewModel())
         self.navigationController = navigationController
         
     }
